@@ -1,0 +1,31 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    background: linear-gradient(-45deg, rgb(122, 0, 215), rgb(0, 89, 255), rgb(221, 2, 126));
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Courgette";
+    font-weight: 300;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}

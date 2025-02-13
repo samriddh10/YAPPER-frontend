@@ -1,0 +1,77 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    background: linear-gradient(-45deg, rgb(122, 0, 215), rgb(0, 89, 255), rgb(221, 2, 126));
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    color: #fff;
+    text-align: center;
+    margin-top: 1px;
+    border-radius: 50px;
+    border: 5px solid;
+    border-color: #fff;
+    
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10px 0 20px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.navbar .admin #tooltip{
+    background-color: rgb(94, 0, 225);
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: -15px 0 0 -135px;
+    height: 120px;
+    width: 170px;
+    padding: 15px 8px 15px 10px;
+    opacity: 0;
+    pointer-events: none; /* Prevents tooltip from affecting hover state */
+}
+.navbar .admin:hover #tooltip{
+    opacity: 1;
+    transition: 0.5s;
+    pointer-events: auto; /* Prevents tooltip from affecting hover state */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
